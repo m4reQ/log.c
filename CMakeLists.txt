@@ -8,5 +8,5 @@ add_library(logc STATIC "src/log.c")
 target_include_directories(logc PUBLIC "src")
 
 if(${LOG_USE_COLOR})
-	target_compile_definitions(logc LOG_USE_COLOR)
+	target_compile_definitions(logc PRIVATE LOG_USE_COLOR)
 endif()
